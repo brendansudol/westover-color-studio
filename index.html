@@ -865,7 +865,6 @@ function buildHouse() {
   roofPlane('z', 0, 9.25, 1.5, -9, E_W + T - 1.5 * WPITCH, yRw, R);
   wbox(-9.42, -8.58, yRw - .08, yRw + .16, -18, 9.25, M.roof);
   gutter('z', -18, 9.25, -19.72, E_W + T - 1.5 * WPITCH, R); gutter('z', 0, 9.25, 1.72, E_W + T - 1.5 * WPITCH, R);
-  downspout(-19.7, 9.1, -1.5, E_W - .2); downspout(1.7, 9.1, 0, E_W - .2);
 
   // rear section roof: side gable facing south, ridge runs into the main roof
   const yRr = E_M + T + 8 * PITCH, yEr = E_M + T - 1.75 * PITCH, yIn = E_M + T + .1 * PITCH;
@@ -889,7 +888,7 @@ function buildHouse() {
   f = new Frame([-18, 0, 8.15], [1, 0, 0]);
   panel(f, [[0, E_W], [18, E_W], [9, E_W + 9 * WPITCH]], M.gable);
   fbox(f, -.2, 18.2, E_W - .05, E_W + .3, 0, .1, M.trim);
-  gableBrackets(f, 0, 9, E_W, WPITCH, 1.0, [9]);
+  gableBrackets(f, 0, 9, E_W, WPITCH, 1.0, [1.2, 9, 16.8]);
   const lamp = new THREE.Mesh(new THREE.CylinderGeometry(.35, .25, .4, 16), M.sash); lamp.position.set(-9, FF + 7.8, 3.2); put(lamp);
 
   // railings
