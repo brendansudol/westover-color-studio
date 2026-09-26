@@ -889,7 +889,7 @@ function buildHouse() {
   f = new Frame([-18, 0, 8.15], [1, 0, 0]);
   panel(f, [[0, E_W], [18, E_W], [9, E_W + 9 * WPITCH]], M.gable);
   fbox(f, -.2, 18.2, E_W - .05, E_W + .3, 0, .1, M.trim);
-  gableBrackets(f, 0, 9, E_W, WPITCH, 1.0, [1.2, 9, 16.8]);
+  gableBrackets(f, 0, 9, E_W, WPITCH, 1.0, [9]);
   const lamp = new THREE.Mesh(new THREE.CylinderGeometry(.35, .25, .4, 16), M.sash); lamp.position.set(-9, FF + 7.8, 3.2); put(lamp);
 
   // railings
